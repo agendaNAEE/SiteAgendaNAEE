@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .wrap{
+            height: 48px;
+            position: relative;
+            z-index: 1000;
+            
+            margin-bottom: 20px;
+        }
+        
+       .menu ul{
+           list-style: none;
+           padding: 0;
+           background-color: #3c5a9c;
+       }
+       .menu ul li{
+           display: inline;
+           position: relative;
+       }
+       .menu ul li a{
+           color: white;
+           display: inline-block;
+           text-decoration: none;
+           padding: 15px;
+           transition: background .2s;
+
+       }
+       .menu ul li a:hover{
+           background-color: lightgray;
+       }
+       /*sub menu*/
+       .menu ul ul{
+          display: none;
+          left: 0;
+          position: absolute;
+       }
+       .menu ul li:hover ul{
+          display: block;
+       }
+       .menu ul ul{
+           width: 150px;
+       }
+       .menu ul ul li a{
+           display: block;
+       }
+       
+       
+            
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <nav class="menu">
+            <ul>
+                <li ><a href="telaAluno.php">Home</a></li>
+                <li><a href="logout.php">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>

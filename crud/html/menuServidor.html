@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wrap{
+            height: 48px;
+            position: relative;
+            z-index: 1000;
+            margin-bottom: 20px;
+        }
+        
+       .menu ul{
+           list-style: none;
+           padding: 0;
+           background-color: #3c5a9c;
+       }
+       .menu ul li{
+           display: inline;
+           position: relative;
+       }
+       .menu ul li a{
+           color: white;
+           display: inline-block;
+           text-decoration: none;
+           padding: 15px;
+           transition: background .2s;
+
+       }
+       .menu ul li a:hover{
+           background-color: lightgray;
+       }
+       /*sub menu*/
+       .menu ul ul{
+          display: none;
+          left: 0;
+          position: absolute;
+       }
+       .menu ul li:hover ul{
+          display: block;
+       }
+       .menu ul ul{
+           width: 150px;
+       }
+       .menu ul ul li a{
+           display: block;
+       }
+       .menu ul li:last-child a{
+           float: right;
+       }
+       
+            
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <nav class="menu">
+            <ul>
+                <li><a href="telaServidor.php">Home</a></li>
+                <li><a href="">Novo Cadastro</a>
+                    <ul>
+                        <li> <a href="cadastroAluno.php">Cadastro de aluno</a></li>
+                        <li> <a href="cadastroAtendimento.php">Cadastro de atendimento</a></li>
+                        <li> <a href="cadastroResponsavel.php">Cadastro de responsável</a></li>
+                        <li> <a href="cadastroServidor.php">Cadastro de servidor</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="">Listas</a>
+                    <ul>
+                        <li> <a href="tabelaAgendamentos.php">Lista de Agendamentos</a></li>
+                        <li> <a href="tabelaAlunos.php">Lista de Alunos</a></li>
+                        <li> <a href="tabelaAtendimentos.php">Lista de Atendimentos</a></li>
+                        <li> <a href="tabelaResponsaveis.php">Lista de Responsáveis</a></li>
+                        <li> <a href="tabelaServidores.php">Lista de Servidores</a></li>
+                    </ul>
+                </li>
+                <li ><a href="cadastroAgendamento.php">Novo Agendamento</a></li>
+                <li><a href="logout.php">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>
